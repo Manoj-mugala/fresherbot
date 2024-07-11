@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ae9d7a;
+}
+
+header {
+    background-color: #333;
+    color: #ae9d7a;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    background-color: #ae9d7a;
+}
+
+.menu-item {
+    background-color: #585858;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.menu-item .price {
+    color: #d1cea2;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.button{
+    color: rgb(139, 76, 76);
+    background-color: azure;
+    padding: 7px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Times New Roman', Times, serif; color: chocolate;">Our Pizza Menu</h1>
+    </header>
+    
+    <section class="menu container-fluid">
+        <div class="menu-item">
+            <img src="pizza-1.jpg" alt="Pizza 1">
+            <h2 class="h2" style="color: aliceblue;">Classic Margherita</h2>
+            <p style="color: aliceblue;">Fresh tomatoes, mozzarella, basil</p>
+            <p class="price">$10.99</p>
+            <button type="button" class="button">Add to cart</button>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pizza-2.jpg" alt="Pizza 2">
+            <h2 class="h2" style="color: aliceblue;">Pepperoni Feast</h2>
+            <p style="color: aliceblue;">Pepperoni, mozzarella, tomato sauce</p>
+            <p class="price">$12.99</p>
+            <button type="button" class="button">Add to cart</button>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pizza-3.jpeg" alt="Pizza 3">
+            <h2 class="h2" style="color: aliceblue;">Veggie Supreme</h2>
+            <p style="color: aliceblue;">Mushrooms, peppers, onions, olives, cheese</p>
+            <p class="price">$11.99</p>
+            <button type="button" class="button">Add to cart</button>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pizza-1.jpg" alt="Pizza 1">
+            <h2 class="h2" style="color: aliceblue;">Classic Margherita</h2>
+            <p style="color: aliceblue;">Fresh tomatoes, mozzarella, basil</p>
+            <p class="price">$10.99</p>
+            <button type="button" class="button">Add to cart</button>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pizza-2.jpg" alt="Pizza 2">
+            <h2 class="h2" style="color: aliceblue;">Pepperoni Feast</h2>
+            <p style="color: aliceblue;">Pepperoni, mozzarella, tomato sauce</p>
+            <p class="price">$12.99</p>
+            <button type="button" class="button">Add to cart</button>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pizza-3.jpeg" alt="Pizza 3">
+            <h2 class="h2" style="color: aliceblue;">Veggie Supreme</h2>
+            <p style="color: aliceblue;">Mushrooms, peppers, onions, olives, cheese</p>
+            <p class="price">$11.99</p>
+            <button type="button" class="button">Add to cart</button>
+        </div>
+        <!-- Add more menu items as needed -->
+    </section>
+</body>
+</html>
