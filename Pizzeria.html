@@ -3,183 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Menu</title>
+    <title>Pizzeria</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        /* Reset default browser styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            width: auto;
+            max-height: 70px;
+        }
+        .chef-image{
+            width: 400px;
+            max-height: auto;
+        }
+        .nav-link{
+            color: white;
+            transition: all 0.5s;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .nav-link:hover{
+            color: aqua;
+        }
+        .first{
+            background-color: rgb(9, 0, 0);
+        }
+        .pizza3{
+            max-height: 30px;
+            height: 20px;
+        }
+        .card-img-top{
+            max-width: 60%;
+            min-height: auto;
+        }
+        .card{
+            max-width: 350px;
+            height: auto;
+            transition: all 0,5s;
+            background-color: rgb(39, 36, 41);
+            padding: 2px;
+            margin: 20px;
+        }
+        .card:hover{
+            transform: translateY(-5px);
+        }
+        .card-text{
+            color: aliceblue;
+        }
+        .card-title{
+            color: aliceblue;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .images{
+            color: aliceblue;
+        }
+        .footer{
+            color: aliceblue;
+        }
+        .heroo{
+            background-color: gray;
+        }
+        .carousel-inner {
+    width: 500px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ae9d7a;
+.carousel-item {
+    align-items: center;
+    transition: 0ms;
+  
 }
-
-header {
-    background-color: #333;
-    color: #ae9d7a;
+.img1{
+  height: 350px;
+  
+}
+.footer1{
     text-align: center;
-    padding: 1em 0;
-}
+    padding-top: 3px;
+    padding-bottom: 3px;
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    background-color: #ae9d7a;
 }
-
-.menu-item {
-    background-color: #585858;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-}
-
-.menu-item img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.menu-item h2 {
-    color: #333;
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.menu-item p {
-    color: #666;
-    font-size: 1.1em;
-    line-height: 1.4;
-}
-
-.menu-item .price {
-    color: #d1cea2;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.h2{
-    font-family: 'Times New Roman', Times, serif;
-}
-.button{
-    color: rgb(139, 76, 76);
-    background-color: azure;
-    padding: 7px;
-}
-
-
+#accordionFlushExample {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #ffffff; /* White text color */
+  }
+  /* Style the accordion buttons */
+  #accordionFlushExample .accordion-button {
+    background-color: #333; /* Dark gray background for buttons */
+    color: #ffffff; /* White text color for buttons */
+  }
+  
     </style>
+
 </head>
 <body>
-    <header>
-        <h1 style="font-family: 'Times New Roman', Times, serif; color: chocolate;">Our Pizza Menu</h1>
-    </header>
+
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.png" class="img-fluid logo" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#"><h4>Home</h4></a>
+              <a class="nav-link" href="about.html"><h4>About</h2></a>
+              <a class="nav-link" href="menu.html"><h4>Menu</h4></a>
+              <a class="nav-link" href="cart.html"><h4>Cart</h4></a>
+            </div>
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            
+          </form>
+        </div>
+    </div> 
+    </nav>
+     
+      <!--Navrbar end-->
+    <div class="container-fluid heroo container-expand-lg">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="sliderr1.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="slider1.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="slider3.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+
+    <div class="container-fluid container-expand-lg heroo justify-content-around">
+        <div class="row align-items-center">
+            <div class="col-lg-6 px-lg-2 px-0"></div>
+            <div class="col-lg--6 px-lg-2 px-0">
+                <p class="images">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ut excepturi blanditiis libero, magnam repellat expedita eligendi eos ea quis architecto et assumenda quibusdam quasi tempora quo sed, facere optio quod? Inventore dolor ad culpa, ab similique mollitia perspiciatis consectetur harum distinctio repellendus itaque praesentium cupiditate expedita, sint odio. Dignissimos rem modi ipsum asperiores vel doloremque adipisci, velit blanditiis veniam beatae! Alias inventore ut vel quia laboriosam iusto eveniet earum. Quibusdam eum est sit et. Sapiente nemo a placeat aliquid perspiciatis ex aut numquam sunt consectetur nihil. Eos, asperiores vitae corporis, harum alias blanditiis consequatur a ipsa, animi nihil accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <!--cards-->
+    <div class="container-fluid heroo">
+        <div class="row  justify-content-around">
+            <div class="col-md-6 col-lg-4 p-2 shadow card d-flex justify-content-center align-items-center">
+                    <img src="pizza-1.jpg" class="card-img-top  img-fluid" alt="...">
+                      <h3 class="card-title">Margharitta</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/cart.html" class="btn btn-primary">Try it out</a>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2 shadow card d-flex justify-content-center align-items-center">
+                
+                    <img src="pizza-2.jpg" class="card-img-top img-fluid" alt="...">
+                   
+                      <h3 class="card-title">cheese Pizza</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/cart.html" class="btn btn-primary">Try it out</a>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2 shadow card d-flex justify-content-center align-items-center">
+                    <img src="pizza-1.jpg" class="card-img-top img-fluid " alt="pizza">
+                    <div class="card-body">
+                      <h3 class="card-title">Crispy Chicken</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/cart.html" class="btn btn-primary">Try it out</a>
+            </div>
+        </div>
+
+        <div class="row  justify-content-around">
+            <div class="col-md-6 col-lg-4 p-2 shadow card d-flex justify-content-center align-items-center">
+                    <img src="pizza-1.jpg" class="card-img-top  img-fluid" alt="...">
+                      <h3 class="card-title">Crispy Corn</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/cart.html" class="btn btn-primary">Try it out</a>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2 shadow card d-flex justify-content-center align-items-center">
+                
+                    <img src="pizza-2.jpg" class="card-img-top img-fluid" alt="...">
+                   
+                      <h3 class="card-title">Double Chicken</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/cart.html" class="btn btn-primary">Try it out</a>
+                    
+                 
+            </div>
+            <div class="col-md-6 col-lg-4 p-2 shadow card d-flex justify-content-center align-items-center">
+                    <img src="pizza-1.jpg" class="card-img-top img-fluid" alt="pizza">
+                    <div class="card-body">
+                      <h3 class="card-title">Hot Paneer</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/cart.html" class="btn btn-primary">Try it out</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Accordian-->
+    <div class="accordion accordion-flush accordion-fluid" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Why Pizzeria ??
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Pizzeria flashback
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              2 Years for Pizzeria
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+      <!--Reviews cards-->
+     
+      
     
-    <section class="menu container-fluid">
-        <div class="menu-item">
-            <img src="pizza-1.jpg" alt="Pizza 1">
-            <h2 class="h2" style="color: aliceblue;">Classic Margherita</h2>
-            <p style="color: aliceblue;">Fresh tomatoes, mozzarella, basil</p>
-            <p class="price">$10.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-2.jpg" alt="Pizza 2">
-            <h2 class="h2" style="color: aliceblue;">Pepperoni Feast</h2>
-            <p style="color: aliceblue;">Pepperoni, mozzarella, tomato sauce</p>
-            <p class="price">$12.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-3.jpeg" alt="Pizza 3">
-            <h2 class="h2" style="color: aliceblue;">Veggie Supreme</h2>
-            <p style="color: aliceblue;">Mushrooms, peppers, onions, olives, cheese</p>
-            <p class="price">$11.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-1.jpg" alt="Pizza 1">
-            <h2 class="h2" style="color: aliceblue;">Classic Margherita</h2>
-            <p style="color: aliceblue;">Fresh tomatoes, mozzarella, basil</p>
-            <p class="price">$10.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-2.jpg" alt="Pizza 2">
-            <h2 class="h2" style="color: aliceblue;">Pepperoni Feast</h2>
-            <p style="color: aliceblue;">Pepperoni, mozzarella, tomato sauce</p>
-            <p class="price">$12.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-3.jpeg" alt="Pizza 3">
-            <h2 class="h2" style="color: aliceblue;">Veggie Supreme</h2>
-            <p style="color: aliceblue;">Mushrooms, peppers, onions, olives, cheese</p>
-            <p class="price">$11.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
 
-        <div class="menu-item">
-            <img src="pizza-1.jpg" alt="Pizza 1">
-            <h2 class="h2" style="color: aliceblue;">Classic Margherita</h2>
-            <p style="color: aliceblue;">Fresh tomatoes, mozzarella, basil</p>
-            <p class="price">$10.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-2.jpg" alt="Pizza 2">
-            <h2 class="h2" style="color: aliceblue;">Pepperoni Feast</h2>
-            <p style="color: aliceblue;">Pepperoni, mozzarella, tomato sauce</p>
-            <p class="price">$12.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-3.jpeg" alt="Pizza 3">
-            <h2 class="h2" style="color: aliceblue;">Veggie Supreme</h2>
-            <p style="color: aliceblue;">Mushrooms, peppers, onions, olives, cheese</p>
-            <p class="price">$11.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-
-        <div class="menu-item">
-            <img src="pizza-1.jpg" alt="Pizza 1">
-            <h2 class="h2" style="color: aliceblue;">Classic Margherita</h2>
-            <p style="color: aliceblue;">Fresh tomatoes, mozzarella, basil</p>
-            <p class="price">$10.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-2.jpg" alt="Pizza 2">
-            <h2 class="h2" style="color: aliceblue;">Pepperoni Feast</h2>
-            <p style="color: aliceblue;">Pepperoni, mozzarella, tomato sauce</p>
-            <p class="price">$12.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        
-        <div class="menu-item">
-            <img src="pizza-3.jpeg" alt="Pizza 3">
-            <h2 class="h2" style="color: aliceblue;">Veggie Supreme</h2>
-            <p style="color: aliceblue;">Mushrooms, peppers, onions, olives, cheese</p>
-            <p class="price">$11.99</p>
-            <button type="button" class="button">Add to cart</button>
-        </div>
-        <!-- Add more menu items as needed -->
-    </section>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+<footer class="justify-content-center footer heroo footer1">
+    <p>&copy; 2024 Pizzeria. All rights reserved.</p>
+</footer>
 </html>
