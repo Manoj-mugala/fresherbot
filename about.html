@@ -13,20 +13,29 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        .logo {
+            width: auto;
+            max-height: 70px;
+        }
+        .nav-link {
+            color: white;
+            transition: all 0.5s;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .nav-link:hover {
+            color: aqua;
+        }
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1rem;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+        .container-custom {
             background-color: #000000;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(56, 54, 54, 0.1);
-            
+            padding: 20px;
         }
         h1 {
             font-size: 2.5rem;
@@ -55,28 +64,50 @@
             background-color: #333;
             color: #fff;
         }
-        bg-img{
-            pad: 30px;
-        }
     </style>
 </head>
-<body>
-    <header>
+<body style="background-color: #212121;">
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo.png" class="img-fluid logo" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="Pizzeria.html"><h4>Home</h4></a>
+                    <a class="nav-link" href="#"><h4>About</h4></a>
+                    <a class="nav-link" href="menu.html"><h4>Menu</h4></a>
+                    <a class="nav-link" href="cart.html"><h4>Contact Us</h4></a>
+                </div>
+            </div>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <header style="background-color: #212121;">
         <h1>About Us</h1>
     </header>
-    <div class="container-fluid bg-black">
-        <p>Welcome to Pizzeria, where we strive to provide exceptional dining experiences through our delicious food and warm hospitality.</p>
+    <div class="container"><p>Welcome to Pizzeria, where we strive to provide exceptional dining experiences through our delicious food and warm hospitality.</p>
         <p>Located in Ghatkesar, our Cafe offers a cozy atmosphere perfect for family gatherings, romantic dinners, or casual outings with friends.</p>
-        <br>
         <p>Our menu features a delightful array of dishes crafted with fresh, locally sourced ingredients. From mouthwatering appetizers to decadent desserts, there's something to satisfy every palate.</p>
         <p>At Pizzeria, we believe in creating memorable moments around the table. Whether you're celebrating a special occasion or simply enjoying a meal with loved ones, we're here to make your experience unforgettable.</p>
-        <div class="image-container ">
-            
-            <img src="bg-2.jpg" alt="Restaurant Interior" class="img-fluid bg-img" style="height: 6%;width: 600px;">
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Pizzeria. All rights reserved.</p>
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148697385.jpg" alt="Restaurant Interior" class="img-fluid">
+        </div></div>
+
+    
+
+    <footer style="background-color: #212121;">
+        <hr>
+        <p class="pt-2" style="text-align: center;">&copy; 2024 Pizzeria. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzXtkKnv6pf6W3ZXSnTcJlTgG1E4zJr74Ph2fhE06K9G" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-qMVI6KkB6ZmQ5GnlUzOzA+KA2imcLFl9zp21Tv5Xp4BOiDUo6EGH0HR5eU/mVErm" crossorigin="anonymous"></script>
 </body>
 </html>
